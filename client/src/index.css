@@ -1,0 +1,14 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  @font-face {
+    font-family: 'Glysa';
+    src: url('./fonts/Glysa.otf');
+}
+  @font-face {
+    font-family: 'Lexend';
+    src: url('./fonts/LexendDeca-VariableFont_wght.ttf');
+}

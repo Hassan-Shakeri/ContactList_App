@@ -1,0 +1,184 @@
+
+.App{
+    border: 15px solid #1E1E1E;
+    display: flex;
+    justify-self: center;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.light {
+    filter: invert(1);
+}
+.light img {
+    filter: invert(1);
+}
+
+.dark {
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+.left, .right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cell{
+    border: 2px solid #1E1E1E;
+}
+
+.sm{
+    display: flex;
+    height: 10%;
+}
+
+.lg{
+    height: 80%;
+}
+
+.nav{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+}
+
+.title{
+    color: #FFFFFF;
+    align-self: center;
+    padding: 25px;
+}
+
+.icons{
+    font-size: 28px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 250px;
+}
+
+
+.arrow{
+    font-size: 28px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sun {
+    font-size: 28px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile{
+    width: 35px;
+    height: 35px;
+    background-color: #262626;
+    border-radius: 50%;
+    border: 1px solid transparent;}
+
+img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.MuiSvgIcon-root{
+    color: #FFFFFF;
+}
+
+.plus-btn{
+    cursor: pointer;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 400;
+    border: none;
+    display: none;
+}
+
+.add-btn{
+    margin: 0 25px 0 20px;
+    cursor: pointer;
+    background: linear-gradient(180deg, #282828b3 0%, #282828 100%), #141414;
+    background-image: linear-gradient(180deg, #282828 0%, #3C3C3C 100%);
+    color: #FFFFFF;
+    font-style: normal;
+    font-family: 'Lexend';
+    letter-spacing: 0.01em;
+    line-height: 20px;
+    padding: 8px 16px 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 1000px;
+    border: 1px solid #3C3C3C;
+    transition: 0.8s;
+}
+
+.add-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: ease-out;
+}
+
+
+.add-btn span {
+    padding-right: 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#resources-settingMenu {
+    display: none;
+
+}
+
+
+@media (max-width: 769px){
+    .left, .right, .sm{
+        display: none;
+    }
+    .lg{
+        height: 90%;
+    }
+    #resources-settingMenu {
+        display: initial;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        font-size: 12px;
+    }
+    .profile , .profile img{
+        width: 30px;
+        height: 30px;
+    }
+    .add-btn{
+        display: none;
+    }
+    .plus-btn{
+        display: initial;
+    }
+    .icons{
+        min-width: 200px;
+    }
+
+
+}
